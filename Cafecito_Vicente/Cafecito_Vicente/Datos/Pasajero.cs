@@ -9,9 +9,15 @@ namespace Cafecito_Vicente.Datos
     class Pasajero
     {
         private string id;
+        private int asiento;
         private String Nombre;
         private String Apellido;
 
+        public int Asiento
+        {
+            get { return asiento; }
+            set { asiento = value; }
+        }
         public string ID
         {
             get { return id; }

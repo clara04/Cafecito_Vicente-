@@ -1,2 +1,4 @@
 c:\users\ivette cerrillo\documents\visual studio 2012\Projects\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\Cafecito_Vicente.exe.config
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\Cafecito_Vicente.exe.config
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Interop.WMPLib.dll
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.csproj.ResolveComReference.cache

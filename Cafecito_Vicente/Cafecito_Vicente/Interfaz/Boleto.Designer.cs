@@ -1,6 +1,6 @@
 ﻿namespace Cafecito_Vicente.Interfaz
 {
-    partial class Boleto
+    partial class Frmboleto
     {
         /// <summary>
         /// Required designer variable.
@@ -31,15 +31,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Txtid = new System.Windows.Forms.TextBox();
+            this.Txtprecio = new System.Windows.Forms.TextBox();
+            this.Txttipo = new System.Windows.Forms.TextBox();
+            this.Tboleto = new System.Windows.Forms.DataGridView();
             this.Btnagregar = new System.Windows.Forms.Button();
             this.Btneliminar = new System.Windows.Forms.Button();
             this.Btnsiguiente = new System.Windows.Forms.Button();
             this.Btnactualizar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tboleto)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,34 +69,35 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Tipo:";
             // 
-            // textBox1
+            // Txtid
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
-            this.textBox1.TabIndex = 5;
+            this.Txtid.Location = new System.Drawing.Point(93, 33);
+            this.Txtid.Name = "Txtid";
+            this.Txtid.Size = new System.Drawing.Size(144, 20);
+            this.Txtid.TabIndex = 5;
             // 
-            // textBox2
+            // Txtprecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 20);
-            this.textBox2.TabIndex = 6;
+            this.Txtprecio.Location = new System.Drawing.Point(93, 98);
+            this.Txtprecio.Name = "Txtprecio";
+            this.Txtprecio.Size = new System.Drawing.Size(144, 20);
+            this.Txtprecio.TabIndex = 6;
             // 
-            // textBox3
+            // Txttipo
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 20);
-            this.textBox3.TabIndex = 7;
+            this.Txttipo.Location = new System.Drawing.Point(93, 67);
+            this.Txttipo.Name = "Txttipo";
+            this.Txttipo.Size = new System.Drawing.Size(144, 20);
+            this.Txttipo.TabIndex = 7;
             // 
-            // dataGridView1
+            // Tboleto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 143);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(293, 150);
-            this.dataGridView1.TabIndex = 8;
+            this.Tboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Tboleto.Location = new System.Drawing.Point(23, 143);
+            this.Tboleto.Name = "Tboleto";
+            this.Tboleto.Size = new System.Drawing.Size(293, 150);
+            this.Tboleto.TabIndex = 8;
+            this.Tboleto.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Tboleto_MouseClick);
             // 
             // Btnagregar
             // 
@@ -116,6 +117,7 @@
             this.Btneliminar.TabIndex = 10;
             this.Btneliminar.Text = "Eliminar";
             this.Btneliminar.UseVisualStyleBackColor = true;
+            this.Btneliminar.Click += new System.EventHandler(this.Btneliminar_Click);
             // 
             // Btnsiguiente
             // 
@@ -125,6 +127,7 @@
             this.Btnsiguiente.TabIndex = 11;
             this.Btnsiguiente.Text = "Siguiente";
             this.Btnsiguiente.UseVisualStyleBackColor = true;
+            this.Btnsiguiente.Click += new System.EventHandler(this.Btnsiguiente_Click);
             // 
             // Btnactualizar
             // 
@@ -135,7 +138,7 @@
             this.Btnactualizar.Text = "Actualizar";
             this.Btnactualizar.UseVisualStyleBackColor = true;
             // 
-            // Boleto
+            // Frmboleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,16 +147,17 @@
             this.Controls.Add(this.Btnsiguiente);
             this.Controls.Add(this.Btneliminar);
             this.Controls.Add(this.Btnagregar);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Tboleto);
+            this.Controls.Add(this.Txttipo);
+            this.Controls.Add(this.Txtprecio);
+            this.Controls.Add(this.Txtid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "Boleto";
+            this.Name = "Frmboleto";
             this.Text = "Boleto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Activated += new System.EventHandler(this.Frmboleto_Activated);
+            ((System.ComponentModel.ISupportInitialize)(this.Tboleto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,10 +168,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox Txtid;
+        private System.Windows.Forms.TextBox Txtprecio;
+        private System.Windows.Forms.TextBox Txttipo;
+        private System.Windows.Forms.DataGridView Tboleto;
         private System.Windows.Forms.Button Btnagregar;
         private System.Windows.Forms.Button Btneliminar;
         private System.Windows.Forms.Button Btnsiguiente;

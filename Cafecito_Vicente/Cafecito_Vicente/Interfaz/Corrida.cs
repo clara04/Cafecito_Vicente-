@@ -21,7 +21,7 @@ namespace Cafecito_Vicente.Interfaz
 
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
-            Boleto mBoleto = new Boleto();
+            Frmboleto mBoleto = new Frmboleto();
             mBoleto.ShowDialog();
         }
 

@@ -22,10 +22,11 @@ namespace Cafecito_Vicente.Logica
         }
         public void agregarPasajero(Pasajero mPasajero)
         {
-            String SQL = "insert into pasajero values (null, '?1', '?2','?3')";
+            String SQL = "insert into pasajero values (null, '?1', '?2','?3','?4')";
             SQL = SQL.Replace("?1", mPasajero.ID);
             SQL = SQL.Replace("?2", mPasajero.nombre);
             SQL = SQL.Replace("?3", mPasajero.apellido);
+            SQL = SQL.Replace("?4",mPasajero.Asiento.ToString());
             mbaseDatos.ejecutarActualizacion(SQL);
         }
         public DataSet consultarPasajero()
@@ -40,6 +41,7 @@ namespace Cafecito_Vicente.Logica
             SQL = SQL.Replace("?1", mPasajero.ID);
             SQL = SQL.Replace("?2", mPasajero.nombre);
             SQL = SQL.Replace("?3", mPasajero.apellido);
+            SQL = SQL.Replace("?4", mPasajero.Asiento.ToString());
 
         }
         public void eliminarPasajero(int ID)

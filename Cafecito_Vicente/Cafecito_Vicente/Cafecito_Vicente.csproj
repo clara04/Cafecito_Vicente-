@@ -66,6 +66,12 @@
     <Compile Include="Interfaz\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\Pasajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Pasajero.Designer.cs">
+      <DependentUpon>Pasajero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logica\ControlBoleto.cs" />
     <Compile Include="Logica\ControlCorrida.cs" />
     <Compile Include="Logica\ControlPasajero.cs" />
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Pasajero.resx">
+      <DependentUpon>Pasajero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
