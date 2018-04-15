@@ -8,11 +8,11 @@ namespace Cafecito_Vicente.Datos
 {
     class Pasajero
     {
-        private int id;
+        private string id;
         private String Nombre;
         private String Apellido;
 
-        public int ID
+        public string ID
         {
             get { return id; }
             set { id = value; }

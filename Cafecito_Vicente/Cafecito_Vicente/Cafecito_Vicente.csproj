@@ -44,12 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base Datos\BaseDatos.cs" />
+    <Compile Include="BD\BaseDatos.cs" />
     <Compile Include="Datos\Boleto.cs" />
     <Compile Include="Datos\Corrida.cs" />
     <Compile Include="Datos\Pasajero.cs" />
-    <Compile Include="Interfaz\Autobus.cs">
+    <Compile Include="Interfaz\Boleto.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Boleto.Designer.cs">
+      <DependentUpon>Boleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Corrida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Corrida.Designer.cs">
+      <DependentUpon>Corrida.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Login.cs">
       <SubType>Form</SubType>
@@ -57,23 +66,19 @@
     <Compile Include="Interfaz\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Venta de Boleto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Venta de Boleto.Designer.cs">
-      <DependentUpon>Venta de Boleto.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Logica\ControlBoleto.cs" />
+    <Compile Include="Logica\ControlCorrida.cs" />
     <Compile Include="Logica\ControlPasajero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Interfaz\Autobus.resx">
-      <DependentUpon>Autobus.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaz\Boleto.resx">
+      <DependentUpon>Boleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Corrida.resx">
+      <DependentUpon>Corrida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaz\Venta de Boleto.resx">
-      <DependentUpon>Venta de Boleto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,7 +103,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\camion.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpe" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

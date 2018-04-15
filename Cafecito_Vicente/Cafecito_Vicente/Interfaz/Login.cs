@@ -16,5 +16,26 @@ namespace Cafecito_Vicente.Interfaz
         {
             InitializeComponent();
         }
+
+        private void BTNcancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void BtnIngresar_Click(object sender, EventArgs e)
+        {
+            if(TxtUsuario.Text == "ADMIN" && TxtContraseña.Text == "12345")
+            {
+                //MessageBox.Show("Bienvenido");
+                FrmCorrida mcorrida = new FrmCorrida();
+                mcorrida.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Acceso denegado");
+            }
+        }
     }
 }

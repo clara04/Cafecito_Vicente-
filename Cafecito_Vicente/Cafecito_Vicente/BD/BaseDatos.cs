@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 
-namespace Cafecito_Vicente
+
+
+namespace Cafecito_Vicente.BD
+
 {
     class BaseDatos
     {

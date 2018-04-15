@@ -34,6 +34,9 @@
             this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.BtnIngresar = new System.Windows.Forms.Button();
             this.LblIngreseDatos = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BTNcancelar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LblUsuario
@@ -65,32 +68,56 @@
             // 
             this.TxtContraseña.Location = new System.Drawing.Point(141, 94);
             this.TxtContraseña.Name = "TxtContraseña";
+            this.TxtContraseña.PasswordChar = '*';
             this.TxtContraseña.Size = new System.Drawing.Size(100, 20);
             this.TxtContraseña.TabIndex = 3;
             // 
             // BtnIngresar
             // 
-            this.BtnIngresar.Location = new System.Drawing.Point(99, 171);
+            this.BtnIngresar.Location = new System.Drawing.Point(89, 175);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(75, 23);
             this.BtnIngresar.TabIndex = 4;
             this.BtnIngresar.Text = "Ingresar";
             this.BtnIngresar.UseVisualStyleBackColor = true;
+            this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // LblIngreseDatos
             // 
             this.LblIngreseDatos.AutoSize = true;
-            this.LblIngreseDatos.Location = new System.Drawing.Point(124, 18);
+            this.LblIngreseDatos.Location = new System.Drawing.Point(138, 18);
             this.LblIngreseDatos.Name = "LblIngreseDatos";
             this.LblIngreseDatos.Size = new System.Drawing.Size(73, 13);
             this.LblIngreseDatos.TabIndex = 5;
             this.LblIngreseDatos.Text = "Ingrese Datos";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cafecito_Vicente.Properties.Resources.descarga;
+            this.pictureBox1.Location = new System.Drawing.Point(272, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BTNcancelar
+            // 
+            this.BTNcancelar.Location = new System.Drawing.Point(219, 175);
+            this.BTNcancelar.Name = "BTNcancelar";
+            this.BTNcancelar.Size = new System.Drawing.Size(75, 23);
+            this.BTNcancelar.TabIndex = 7;
+            this.BTNcancelar.Text = "Cancelar";
+            this.BTNcancelar.UseVisualStyleBackColor = true;
+            this.BTNcancelar.Click += new System.EventHandler(this.BTNcancelar_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 249);
+            this.ClientSize = new System.Drawing.Size(412, 225);
+            this.Controls.Add(this.BTNcancelar);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LblIngreseDatos);
             this.Controls.Add(this.BtnIngresar);
             this.Controls.Add(this.TxtContraseña);
@@ -99,6 +126,7 @@
             this.Controls.Add(this.LblUsuario);
             this.Name = "Login";
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +140,7 @@
         private System.Windows.Forms.TextBox TxtContraseña;
         private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.Label LblIngreseDatos;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BTNcancelar;
     }
 }

@@ -8,11 +8,17 @@ namespace Cafecito_Vicente.Datos
 {
     class Corrida
     {
+        private string ID;
         private String Origen;
         private String Destino;
-        private DateTime fecha;
-        private DateTime Hora;
+        private String Fecha;
+        private String Hora;
 
+        public string id
+        {
+            get { return ID; }
+            set { ID = value; }
+        }
         public String origen
         {
             get { return Origen; }
@@ -23,12 +29,12 @@ namespace Cafecito_Vicente.Datos
             get { return Destino; }
             set { Destino = value; }
         }
-        public DateTime Fecha
+        public String fecha
         {
-            get { return fecha; }
-            set { fecha = value; }
+            get { return Fecha; }
+            set { Fecha = value; }
         }
-        public DateTime hora
+        public String hora
         {
             get { return Hora; }
             set { Hora = value; }

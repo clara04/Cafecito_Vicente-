@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Cafecito_Vicente.Interfaz
 {
-    public partial class Venta_de_Boleto : Form
+    public partial class Boleto : Form
     {
-        public Venta_de_Boleto()
+        public Boleto()
         {
             InitializeComponent();
         }
 
-        private void Venta_de_Boleto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Btnagregar_Click(object sender, EventArgs e)
         {
 
         }
