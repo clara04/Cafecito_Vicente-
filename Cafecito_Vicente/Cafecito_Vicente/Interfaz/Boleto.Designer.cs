@@ -137,6 +137,7 @@
             this.Btnactualizar.TabIndex = 12;
             this.Btnactualizar.Text = "Actualizar";
             this.Btnactualizar.UseVisualStyleBackColor = true;
+            this.Btnactualizar.Click += new System.EventHandler(this.Btnactualizar_Click);
             // 
             // Frmboleto
             // 

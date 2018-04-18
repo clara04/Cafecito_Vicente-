@@ -32,7 +32,7 @@ namespace Cafecito_Vicente.Interfaz
                 mControlBoleto.agregarBoleto(mBoleto);
                 MessageBox.Show("Se ha agregado un boleto");
             }
-            catch
+            catch (Exception)
             {
                 MessageBox.Show("Error al actualizar");
             }
@@ -67,6 +67,19 @@ namespace Cafecito_Vicente.Interfaz
         {
             Frmpasajero frmpasajero = new Frmpasajero();
             frmpasajero.ShowDialog();
+        }
+
+        private void Btnactualizar_Click(object sender, EventArgs e)
+        {
+            Boleto mBoleto = new Boleto();
+            mBoleto.id = Txtid.Text;
+            mBoleto.Precio = float.Parse(Txtprecio.Text);
+            mBoleto.tipo = Txttipo.Text;
+
+            ControlBoleto mControl = new ControlBoleto();
+            mControl.modificarBoleto(mBoleto);
+            MessageBox.Show("Se ha modificado el boleto.");
+
         }
     }
 }

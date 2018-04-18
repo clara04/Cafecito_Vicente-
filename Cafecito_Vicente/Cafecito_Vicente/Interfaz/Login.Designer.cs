@@ -1,6 +1,6 @@
 ﻿namespace Cafecito_Vicente.Interfaz
 {
-    partial class Login
+    partial class Frmlogin
     {
         /// <summary>
         /// Required designer variable.
@@ -111,7 +111,7 @@
             this.BTNcancelar.UseVisualStyleBackColor = true;
             this.BTNcancelar.Click += new System.EventHandler(this.BTNcancelar_Click);
             // 
-            // Login
+            // Frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,7 +124,7 @@
             this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.LblContraseña);
             this.Controls.Add(this.LblUsuario);
-            this.Name = "Login";
+            this.Name = "Frmlogin";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cafecito_Vicente.Interfaz
 {
-    public partial class Login : Form
+    public partial class Frmlogin : Form
     {
-        public Login()
+        public Frmlogin()
         {
             InitializeComponent();
         }

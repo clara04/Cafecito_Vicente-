@@ -2,3 +2,15 @@ c:\users\ivette cerrillo\documents\visual studio 2012\Projects\Cafecito_Vicente\
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\Cafecito_Vicente.exe.config
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Interop.WMPLib.dll
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.csproj.ResolveComReference.cache
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.csprojResolveAssemblyReference.cache
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.Frmboleto.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.FrmCorrida.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.Frmpasajero.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Properties.Resources.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.csproj.GenerateResource.Cache
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.FrmConsulta.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\Cafecito_Vicente.exe
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\Cafecito_Vicente.pdb
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.Frmlogin.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.exe
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.pdb
