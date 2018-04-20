@@ -17,7 +17,7 @@ namespace Cafecito_Vicente.BD
         public void Conectar(String controlador, String servidor, String basedatos, String User, String Password)
     {
         ConexionMYSQL = new OdbcConnection("Driver={"+controlador+"}; SERVER="+servidor+"; DataBase="+basedatos+";UID="+User+";PWD="+Password+";");
-        ConexionMYSQL.Open();
+        ConexionMYSQL.Open(); 
     }
         public DataSet ejecutarConsulta(String SQL)
         {

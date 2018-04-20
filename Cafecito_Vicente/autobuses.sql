@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-04-2018 a las 00:29:45
+-- Tiempo de generación: 20-04-2018 a las 16:39:04
 -- Versión del servidor: 5.6.17-log
 -- Versión de PHP: 5.5.12
 
@@ -28,7 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `boleto` (
   `precio` float DEFAULT NULL,
-  `id_boleto` int(11) DEFAULT NULL
+  `id_boleto` int(11) DEFAULT NULL,
+  `tipo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -56,6 +57,7 @@ CREATE TABLE IF NOT EXISTS `pasajero` (
   `id` int(11) NOT NULL,
   `nombre` text,
   `apellido` text,
+  `asiento` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -63,10 +65,10 @@ CREATE TABLE IF NOT EXISTS `pasajero` (
 -- Volcado de datos para la tabla `pasajero`
 --
 
-INSERT INTO `pasajero` (`id`, `nombre`, `apellido`) VALUES
-(1, 'Juan', 'Lopez'),
-(2, 'Armando', 'Gomez'),
-(3, 'Ana', 'Carrillo');
+INSERT INTO `pasajero` (`id`, `nombre`, `apellido`, `asiento`) VALUES
+(1, 'Juan', 'Lopez', 0),
+(2, 'Armando', 'Gomez', 0),
+(3, 'Ana', 'Carrillo', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

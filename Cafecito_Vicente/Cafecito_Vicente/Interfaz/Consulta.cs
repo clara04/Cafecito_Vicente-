@@ -27,11 +27,26 @@ namespace Cafecito_Vicente.Interfaz
             ControlCorrida mControlCorrida = new ControlCorrida();
             Tbuscar.DataSource = mControlCorrida.consultarCorrida().Tables[0];
 
+            
            
         }
 
         private void FrmConsulta_Load(object sender, EventArgs e)
         {
+        }
+
+        private void Tbuscar_MouseClick(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+               Txtbuscar.Text = Tbuscar.SelectedRows[].Cells[0].Value.ToString();
+           
+
+       
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
