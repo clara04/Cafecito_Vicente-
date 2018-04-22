@@ -93,7 +93,7 @@ namespace Cafecito_Vicente.Interfaz
 
         private void Btnsiguiente_Click(object sender, EventArgs e)
         {
-            FrmConsulta consulta = new FrmConsulta();
+            FrmConsultas consulta = new FrmConsultas();
             consulta.ShowDialog();
         }
     }
