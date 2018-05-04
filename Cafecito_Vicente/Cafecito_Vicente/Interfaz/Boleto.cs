@@ -17,6 +17,24 @@ namespace Cafecito_Vicente.Interfaz
         public Frmboleto()
         {
             InitializeComponent();
+            ControlBoleto mControlBoleto = new ControlBoleto();
+            Tboleto.DataSource = mControlBoleto.consultarBoleto();
+        }
+
+        private void Btnsiguiente_Click(object sender, EventArgs e)
+        {
+            Frmpasajero pasajero = new Frmpasajero();
+            pasajero.ShowDialog();
+        }
+
+        private void Btnatras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Frmboleto_Activated(object sender, EventArgs e)
+        {
+          
         }
 
         private void Btnagregar_Click(object sender, EventArgs e)
@@ -24,62 +42,64 @@ namespace Cafecito_Vicente.Interfaz
             try
             {
                 Boleto mBoleto = new Boleto();
-                mBoleto.id = Txtid.Text;
+                mBoleto.id = int.Parse(Txtid.Text);
+                mBoleto.Precio = float.Parse(Txtpecio.Text);
                 mBoleto.tipo = Txttipo.Text;
-                mBoleto.Precio = float.Parse(Txtprecio.Text);
 
-                ControlBoleto mControlBoleto = new ControlBoleto();
-                mControlBoleto.agregarBoleto(mBoleto);
-                MessageBox.Show("Se ha agregado un boleto");
+                ControlBoleto mControl = new ControlBoleto();
+                mControl.agregarBoleto(mBoleto);
+                MessageBox.Show("Se ha agregado el boleto exitosamente");
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al actualizar");
+                MessageBox.Show("Error al agregar");
             }
-        }
-
-        private void Frmboleto_Activated(object sender, EventArgs e)
-        {
-            ControlBoleto mControlBoleto = new ControlBoleto();
-            Tboleto.DataSource = mControlBoleto.consultarBoleto().Tables[0];
         }
 
         private void Btneliminar_Click(object sender, EventArgs e)
         {
-            Boleto mBoleto = new Boleto();
-            int ID = (int)Tboleto.SelectedRows[0].Cells[0].Value;
+            try
+            {
+                Boleto mBoleto = new Boleto();
+                int ID = (int)Tboleto.SelectedRows[0].Cells[0].Value;
 
-            ControlBoleto mControlBoleto = new ControlBoleto();
-            mControlBoleto.eliminarBoleto(ID);
-            MessageBox.Show("Se ha eliminado un boleto");
+                ControlBoleto mControl = new ControlBoleto();
+                mControl.eliminarBoleto(ID);
+                MessageBox.Show("Se ha eliminado una corrida");
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Error al eliminar");
+
+            }
+        }
+
+        private void Btnmodificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Boleto mBoleto = new Boleto();
+                int ID = (int)Tboleto.SelectedRows[0].Cells[0].Value;
+                mBoleto.id = ID;
+                mBoleto.Precio = float.Parse(Txtpecio.Text);
+                mBoleto.tipo = Txttipo.Text;
+
+                ControlBoleto mControl = new ControlBoleto();
+                mControl.agregarBoleto(mBoleto);
+                MessageBox.Show("Se ha modificado el boleto exitosamente");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al modificar.");
+            }
         }
 
         private void Tboleto_MouseClick(object sender, MouseEventArgs e)
         {
-           
             int ID = (int)Tboleto.SelectedRows[0].Cells[0].Value;
-            Txttipo.Text = Tboleto.SelectedRows[0].Cells[1].Value.ToString();
+            Txtpecio.Text = Tboleto.SelectedRows[0].Cells[1].Value.ToString();
             Txttipo.Text = Tboleto.SelectedRows[0].Cells[2].Value.ToString();
-            Txtprecio.Text = Tboleto.SelectedRows[0].Cells[3].Value.ToString();
-        }
-
-        private void Btnsiguiente_Click(object sender, EventArgs e)
-        {
-            Frmpasajero frmpasajero = new Frmpasajero();
-            frmpasajero.ShowDialog();
-        }
-
-        private void Btnactualizar_Click(object sender, EventArgs e)
-        {
-            Boleto mBoleto = new Boleto();
-            mBoleto.id = Txtid.Text;
-            mBoleto.Precio = float.Parse(Txtprecio.Text);
-            mBoleto.tipo = Txttipo.Text;
-
-            ControlBoleto mControl = new ControlBoleto();
-            mControl.modificarBoleto(mBoleto);
-            MessageBox.Show("Se ha modificado el boleto.");
-
+          
         }
     }
 }

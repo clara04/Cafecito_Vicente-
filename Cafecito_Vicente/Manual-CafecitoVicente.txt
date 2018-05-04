@@ -1,0 +1,45 @@
+El Cafecito de Vicente
+
+Instrucciones:
+-Como primera instrucción se tiene que abrir la solución en Visual Studio(la versión tiene que ser igual o mayor a Visual Studio 2012).
+
+-Ya ejecutado el programa se inicia la solución y se arranca el programa.
+
+-Al iniciar el programa te aparecerá un cuadro de Dialogo donde tendrás que ingresar los siguientes datos.
+	Usuario: ADMIN
+	Contraseña: 12345
+		(Nota: al ingresar el usuario "ADMIN" se tendrá que poner con mayúsculas y la única manera de entrar será con el nombre de usuario "ADMIN")
+-Ya ingresado los datos aparecerá un cuadro donde se tendrá que ingresar los datos de la corrida (se tiene que ingresar todos los datos de la corrida ya que
+si no es así no se podrá agregar una nueva corrida), ya después de esto le damos click al botón "Agregar nuevo" esto para que se agregue la nueva corrida.
+Para modificar una corrida le damos click al botón "Modificar" allí seleccionamos la corrida que queramos modificar y ya seleccionada podremos cambiar 
+cualquier dato de la corrida.
+Ya para eliminar una corrida solo le damos click en "Eliminar" y seleccionamos la corrida que deseemos eliminar.
+
+-Para pasar al siguiente formulario le damos click al botón "Siguiente" y nos llevara a un cuadro llamado "Boleto".
+Ya estando en el cuadro de interacción tendremos que ingresar los datos del boleto (se tiene que ingresar todos los datos del boleto ya que
+si no es así no se podrá agregar), ya después de esto le damos click al botón "Agregar" esto para que se agregue un nuevo.
+Para actualizar el boleto le damos click al botón "Actualizar" allí seleccionamos lo que queramos actualizar y ya seleccionado podremos cambiar 
+cualquier dato del boleto.
+Ya para eliminar solo le damos click en "Eliminar" y seleccionamos el boleto que se quiere eliminar.
+
+-Para pasar al otro formulario le damos click al botón "Siguiente" y nos llevara a un cuadro llamado "Pasajero".
+Ya estando en el cuadro de pasajero tendremos que ingresar los datos del pasajero (se tiene que ingresar todos los datos del pasajero ya que
+si no es así no se podrá agregar un pasajero), ya después de esto le damos click al botón "Agregar" esto para que se agregue un nuevo pasajero.
+Para actualizar el Pasajero le damos click al botón "Actualizar" allí seleccionamos lo que queramos actualizar y ya seleccionado podremos cambiar 
+cualquier dato del Pasajero.
+Ya para eliminar solo le damos click en "Eliminar" y seleccionamos al pasajero que se va a eliminar.
+
+-Por ultimo pasamos al siguiente formulario que será el de "Consultas" y para ello le damos "siguiente" al formulario "Pasajero"
+Ya estando en el formulario buscamos la corrida que deseemos buscar y para ello tendremos que ingresar el id de la corrida.
+
+*NOTAS ADICIONALES:
+-Si se quiere generar el reporte e imprimirlo, en el formulario de consultas aparecerán todas las corridas registradas en el sistema. NO podrá
+generar el reporte haciendo una consulta de la corrida.
+
+-Damos click en "Generar Reporte" aparecerá un archivo de PDF.
+-Para agregarlo a la carpeta de la ruta sólo da click en "Imorimir"
+-Para salir de la aplicación, sólo da en Salir.
+
+*Sobre la ruta*
+Sólo hay que cambiarla en el método del botón "Imprimir", deberá ser la ruta donde esté ubicado el proyecto.
+

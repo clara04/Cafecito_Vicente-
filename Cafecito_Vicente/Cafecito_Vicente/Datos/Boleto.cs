@@ -8,25 +8,27 @@ namespace Cafecito_Vicente.Datos
 {
     class Boleto
     {
+        private int ID;
         private float precio;
-        private string ID;
         private string Tipo;
 
-        public string tipo
+        public int id
         {
-            get { return Tipo; }
-            set { Tipo = value; }
+            get { return ID; }
+            set { ID = value; }
         }
         public float Precio
         {
             get { return precio; }
             set { precio = value; }
         }
-
-        public string id
+        public string tipo
         {
-            get { return ID; }
-            set { ID = value; }
+            get { return Tipo; }
+            set { Tipo = value; }
         }
+
+
+        
     }
 }

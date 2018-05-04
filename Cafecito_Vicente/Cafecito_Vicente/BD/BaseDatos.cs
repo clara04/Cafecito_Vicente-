@@ -27,6 +27,14 @@ namespace Cafecito_Vicente.BD
             adaptadorDatos.Fill(resultado);
             return resultado;
         }
+        public DataTable ejecutarConsulta(String SQL, bool tabla)
+        {
+            OdbcDataAdapter adaptadorDatos = new OdbcDataAdapter(SQL, ConexionMYSQL);
+            DataTable resultado = new DataTable();
+
+            adaptadorDatos.Fill(resultado);
+            return resultado;
+        }
         public void ejecutarActualizacion(String SQL)
         {
             OdbcCommand comando = new OdbcCommand(SQL, ConexionMYSQL);

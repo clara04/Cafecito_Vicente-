@@ -13,4 +13,11 @@ C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_V
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.Frmlogin.resources
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.exe
 C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.pdb
-C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.FrmConsultas.resources
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\itextsharp.dll
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\itextsharp.xml
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\bin\Debug\ES\System.Data.SqlServerCe.resources.dll
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.csproj.CoreCompileInputs.cache
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.csproj.CopyComplete
+C:\Users\Ivette Cerrillo\Documents\Ingeniería de Software\Axel-Clara\Cafecito_Vicente-\Cafecito_Vicente\Cafecito_Vicente\obj\Debug\Cafecito_Vicente.Interfaz.Frmconsulta.resources

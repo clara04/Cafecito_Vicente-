@@ -8,13 +8,13 @@ namespace Cafecito_Vicente.Datos
 {
     class Corrida
     {
-        private string ID;
+        private int ID;
         private String Origen;
         private String Destino;
         private String Fecha;
         private String Hora;
 
-        public string id
+        public int id
         {
             get { return ID; }
             set { ID = value; }

@@ -46,6 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.Btnatras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Tpasajero)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -53,9 +54,13 @@
             // 
             // Tpasajero
             // 
+            this.Tpasajero.AllowUserToAddRows = false;
+            this.Tpasajero.AllowUserToDeleteRows = false;
             this.Tpasajero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Tpasajero.Location = new System.Drawing.Point(22, 83);
             this.Tpasajero.Name = "Tpasajero";
+            this.Tpasajero.ReadOnly = true;
+            this.Tpasajero.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Tpasajero.Size = new System.Drawing.Size(441, 182);
             this.Tpasajero.TabIndex = 0;
             this.Tpasajero.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tpasajero_CellContentClick);
@@ -63,6 +68,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Btnatras);
             this.groupBox1.Controls.Add(this.Btnsiguiente);
             this.groupBox1.Controls.Add(this.Btnactualizar);
             this.groupBox1.Controls.Add(this.Btneliminar);
@@ -287,6 +293,16 @@
             this.checkedListBox1.Size = new System.Drawing.Size(176, 139);
             this.checkedListBox1.TabIndex = 0;
             // 
+            // Btnatras
+            // 
+            this.Btnatras.Location = new System.Drawing.Point(321, 118);
+            this.Btnatras.Name = "Btnatras";
+            this.Btnatras.Size = new System.Drawing.Size(75, 23);
+            this.Btnatras.TabIndex = 12;
+            this.Btnatras.Text = "Atrás";
+            this.Btnatras.UseVisualStyleBackColor = true;
+            this.Btnatras.Click += new System.EventHandler(this.Btnatras_Click);
+            // 
             // Frmpasajero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,5 +345,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button Btnatras;
     }
 }

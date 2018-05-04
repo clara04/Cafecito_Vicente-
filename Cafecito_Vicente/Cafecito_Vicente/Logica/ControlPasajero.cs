@@ -17,22 +17,29 @@ namespace Cafecito_Vicente.Logica
         public ControlPasajero()
         {
             mbaseDatos = new BaseDatos();
-            mbaseDatos.Conectar("MySQL ODBC 5.2w Driver", "localhost", "autobuses", "", "");
+            mbaseDatos.Conectar("MySQL ODBC 5.2w Driver", "localhost", "autobuses", "root", "");
 
         }
         public void agregarPasajero(Pasajero mPasajero)
         {
-            String SQL = "insert into pasajero values (null, '?1', '?2','?3','?4')";
+            String SQL = "insert into pasajero values ('?1', '?2','?3','?4')";
             SQL = SQL.Replace("?1", mPasajero.ID);
             SQL = SQL.Replace("?2", mPasajero.nombre);
             SQL = SQL.Replace("?3", mPasajero.apellido);
             SQL = SQL.Replace("?4",mPasajero.Asiento.ToString());
             mbaseDatos.ejecutarActualizacion(SQL);
         }
-        public DataSet consultarPasajero()
+        public DataTable consultarPasajero()
         {
             String SQL = "select * from pasajero";
-            DataSet ListaPasajero = mbaseDatos.ejecutarConsulta(SQL);
+            DataTable ListaPasajero = mbaseDatos.ejecutarConsulta(SQL, true);
+            return ListaPasajero;
+        }
+        public DataTable consultarPasajero(string nombre)
+        {
+            String SQL = "select * from pasajero where nombre=?2;";
+            SQL = SQL.Replace("?2", nombre);
+            DataTable ListaPasajero = mbaseDatos.ejecutarConsulta(SQL, true);
             return ListaPasajero;
         }
         public void modificarPasajero(Pasajero mPasajero)

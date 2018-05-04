@@ -18,12 +18,13 @@ namespace Cafecito_Vicente.Interfaz
         public Frmpasajero()
         {
             InitializeComponent();
+            ControlPasajero mControlPasajero = new ControlPasajero();
+            Tpasajero.DataSource = mControlPasajero.consultarPasajero();
         }
     
         private void Frmpasajero_Activated(object sender, EventArgs e)
         {
-            ControlPasajero mControlPasajero = new ControlPasajero();
-            Tpasajero.DataSource = mControlPasajero.consultarPasajero().Tables[0];
+           
         }
 
         private void Btnagregar_Click(object sender, EventArgs e)
@@ -49,14 +50,21 @@ namespace Cafecito_Vicente.Interfaz
 
         private void Btneliminar_Click(object sender, EventArgs e)
         {
-            Pasajero mPasajero = new Pasajero();
-            int ID = (int)Tpasajero.SelectedRows[0].Cells[0].Value;
+            try
+            {
+                Pasajero mPasajero = new Pasajero();
+                int ID = (int)Tpasajero.SelectedRows[0].Cells[0].Value;
 
-            ControlPasajero mControlPasajero = new ControlPasajero();
-            mControlPasajero.eliminarPasajero(ID);
-            MessageBox.Show("Se ha eliminado un pasajero");
+                ControlPasajero mControlPasajero = new ControlPasajero();
+                mControlPasajero.eliminarPasajero(ID);
+                MessageBox.Show("Se ha eliminado un pasajero");
+            }
+            catch
+            {
+                MessageBox.Show("Error al eliminar");
+            }
+
         }
-
         private void Tpasajero_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -74,12 +82,18 @@ namespace Cafecito_Vicente.Interfaz
 
         private void Btnactualizar_Click(object sender, EventArgs e)
         {
-            Pasajero mPasajero = new Pasajero();
-            mPasajero.ID = Txtid.Text;
-            mPasajero.nombre = Txtnombre.Text;
-            mPasajero.apellido = Txtapellido.Text;
-            mPasajero.Asiento = int.Parse(Txtasiento.Text);
-
+            try
+            {
+                Pasajero mPasajero = new Pasajero();
+                mPasajero.ID = Txtid.Text;
+                mPasajero.nombre = Txtnombre.Text;
+                mPasajero.apellido = Txtapellido.Text;
+                mPasajero.Asiento = int.Parse(Txtasiento.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Error al modificar");
+            }
         }
 
         private void Tpasajero_MouseClick(object sender, MouseEventArgs e)
@@ -93,8 +107,13 @@ namespace Cafecito_Vicente.Interfaz
 
         private void Btnsiguiente_Click(object sender, EventArgs e)
         {
-            FrmConsultas consulta = new FrmConsultas();
+            Frmconsulta consulta = new Frmconsulta();
             consulta.ShowDialog();
+        }
+
+        private void Btnatras_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
